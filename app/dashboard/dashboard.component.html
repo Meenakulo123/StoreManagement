@@ -1,0 +1,64 @@
+<body>
+
+    <mat-card>
+        <b><span>Dashboard</span> </b>
+    </mat-card>
+<br>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h2 class ="title">Total Category:</h2>
+                <h1 class ="title">{{data?.category}}</h1>
+                <p><button class ="button"[routerLink]="['/super_market/category']">View Category</button></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h2 class ="title">Total Product:</h2>
+                <h1 class ="title">{{data?.product}}</h1>
+                <p><button class ="button"[routerLink]="['/super_market/product']">View Product</button></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h2 class ="title">Total Bill:</h2>
+                <h1 class ="title">{{data?.bill}}</h1>
+                <p><button class ="button"[routerLink]="['/super_market/bill']">View Bill</button></p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h2 class ="title">Manage User:</h2>
+                <p><button class ="button"[routerLink]="['/super_market/user']">Manage User</button></p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h2 class ="title">Manage Order:</h2>
+                <p><button class ="button"[routerLink]="['/super_market/order']">Manage Order</button></p>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+    
+
+</body>

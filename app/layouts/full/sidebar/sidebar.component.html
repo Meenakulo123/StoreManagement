@@ -1,0 +1,16 @@
+<body style="background-image: url('../../assets/img/8.jfif'); background-size: cover; background-repeat: no-repeat;">
+<mat-nav-list appAccordion>
+    <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()" routerLinkActive="selected"
+        group="{{menuitem.state}}">
+        <a class="" appAccordionToggle [routerLink]="['/super_market/',menuitem.state]"
+            *ngIf="menuitem.type ==='link' && (menuitem.role === '' || menuitem.role === userRole)"
+            style="color:white;">
+            <mat-icon>{{menuitem.icon}}</mat-icon>
+            <span>{{menuitem.name}}</span>
+        </a>
+    </mat-list-item>
+</mat-nav-list>
+</body>
+
+
+
